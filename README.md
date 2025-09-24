@@ -38,3 +38,31 @@ Build an interactive dashboard to present insights from Task 1 in a clear, visua
 
 
 ---
+## 🔮 Task 3: Predicting Customer Churn (Classification)
+
+**🎯 Goal:**  
+Build a classification model to predict whether a customer will churn (leave the service), so retention efforts can be targeted effectively.
+
+---
+
+### 🔹 Steps Performed
+- Loaded **Telco Customer Churn dataset**.  
+- Cleaned data (handled missing values, dropped `customerID`, converted `TotalCharges`).  
+- Encoded categorical variables using **Label Encoding**.  
+- Split dataset into **train (80%)** and **test (20%)** sets.  
+- Trained a **Logistic Regression model**.  
+- Evaluated model performance using **Accuracy** and a **Confusion Matrix**.  
+
+---
+
+### 🔑 Key Results
+- Accuracy score of the Logistic Regression model reported.  
+- **Confusion Matrix** explained business-wise:  
+  - **TP (True Positives):** Correctly predicted churners  
+  - **TN (True Negatives):** Correctly predicted non-churners  
+  - **FP (False Positives):** Non-churners flagged incorrectly  
+  - **FN (False Negatives):** Missed churners (critical for business)  
+
+
+---
+
