@@ -95,5 +95,31 @@ Since retaining customers is cheaper than acquiring new ones, minimizing **False
 
 ---
 
+## 🎬 Task 5: Building a Product Recommendation System
+
+**🎯 Goal:**  
+Develop a simple content-based movie recommendation system that suggests movies similar to the ones a user has already liked.
+
+---
+
+### 🔹 Steps Performed
+- Used the **TMDB 5000 Movies dataset** (`tmdb_5000_movies.csv`).  
+- Selected relevant columns: **title** and **overview**.  
+- Preprocessed data by filling missing overviews with empty strings.  
+- Applied **TF-IDF Vectorizer** to convert text (movie overviews) into numerical features.  
+- Calculated **Cosine Similarity** between all movie vectors.  
+- Built a **recommendation function** that returns the top 5 most similar movies for a given title.  
+
+---
+
+### 🔑 Key Results
+- Implemented a function `recommend_movies(title)` that outputs 5 similar movies.  
+- Tested with examples:  
+  - **Inception** → Suggested other sci-fi thrillers.  
+  - **The Dark Knight** → Suggested superhero/action films.  
+  - **Avatar** → Suggested fantasy/adventure titles.  
+
+---
+
 
 
