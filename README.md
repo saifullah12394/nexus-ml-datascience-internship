@@ -120,6 +120,51 @@ Develop a simple content-based movie recommendation system that suggests movies 
   - **Avatar** → Suggested fantasy/adventure titles.  
 
 ---
+# Task 6: Forecasting Future Sales (Time Series Analysis)
+
+## 🎯 Goal
+Build a time series model to forecast sales for the next 30 days, enabling GlobalMart to plan inventory and stock effectively.
+
+## 🔹 Steps Performed
+
+### 1. Data Preparation
+- Loaded the **Superstore Sales** dataset.  
+- Converted `Ship Date` to datetime and set it as the index.  
+- Aggregated sales by day to create a **daily sales time series**.  
+- Checked for stationarity using the **Augmented Dickey-Fuller (ADF) test**.
+
+### 2. Train/Test Split
+- Split data into **train** (all but last 30 days) and **test** (last 30 days).
+
+### 3. Model Training
+- Trained a **SARIMA** model on the training set with:
+  - `order = (1,1,1)`
+  - `seasonal_order = (1,1,1,7)`
+
+### 4. Predictions on Test Set
+- Predicted sales on the test set using **integer-based positions** to avoid KeyErrors.  
+- Calculated **RMSE** to evaluate prediction accuracy.
+
+### 5. Forecasting Future Sales
+- Forecasted sales for the **next 30 days** beyond the dataset.  
+- Generated **future dates** to match the forecast.
+
+### 6. Visualization
+- Plotted:
+  - Historical sales
+  - SARIMA predictions on the test set
+  - 30-day future forecast
+- Single graph clearly shows trends, short-term prediction performance, and future forecast.
+
+## 🔑 Key Results
+- **Test RMSE** reported to measure prediction accuracy.  
+- **30-day sales forecast** provided actionable insights for inventory planning.  
+- Visualization allows easy comparison of historical trends, model predictions, and future forecast.
+
+## 💡 Business Impact
+- Helps optimize inventory and reduce stockouts.  
+- Prevents overstocking and supports better operational planning.  
+- Enables targeted marketing campaigns and proactive inventory decisions.
 
 
 
