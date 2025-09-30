@@ -65,4 +65,35 @@ Build a classification model to predict whether a customer will churn (leave the
 
 
 ---
+## 🚀 Task 4: Optimizing Churn Prediction (Advanced Classification)
+
+**🎯 Goal:**  
+Enhance the customer churn prediction model by applying more powerful algorithms and advanced evaluation metrics to achieve higher accuracy and better identify at-risk customers.
+
+---
+
+### 🔹 Steps Performed
+- Used the **Telco Customer Churn dataset** (same as Task 3).  
+- Scaled numerical features with **StandardScaler**.  
+- Trained and compared three models:  
+  - Logistic Regression (baseline)  
+  - Random Forest Classifier  
+  - XGBoost Classifier  
+- Evaluated performance using **Accuracy, Precision, Recall, and F1-Score**.  
+- Analyzed results and provided a **business recommendation**.  
+
+---
+
+### 🔑 Key Results
+- **Logistic Regression**: Simple baseline with fair accuracy.  
+- **Random Forest**: Improved performance with better precision and recall.  
+- **XGBoost**: Best trade-off between accuracy and recall, achieving the highest **F1-Score**.  
+
+**Business Impact:**  
+Since retaining customers is cheaper than acquiring new ones, minimizing **False Negatives** (missed churners) is crucial.  
+➡️ **XGBoost** is recommended for deployment due to its superior ability to identify churners.  
+
+---
+
+
 
